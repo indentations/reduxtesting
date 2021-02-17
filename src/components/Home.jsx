@@ -13,11 +13,13 @@ export default class Home extends Component {
     return (
       <div>
         <h1>Welcome to Home</h1>
-        <h1>name:{this.props.name}</h1>
+        <h1>name:{this.props.user.name}</h1>
+        <h1>age:{this.props.user.age}</h1>
+        <h1>addres:{this.props.user.address}</h1>
         {/* <h1>Addres:{this.props.myaddress}</h1> */}
         <button
           onClick={() => {
-            this.props.handleChangeName("wali is here");
+            this.props.handleChangeName({name:"wali is here",age:34,address:"user lhr"});
           }}
         >
           Add To Cart
