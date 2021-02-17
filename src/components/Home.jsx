@@ -4,6 +4,7 @@ import React, { Component } from "react";
 export default class Home extends Component {
   constructor(props) {
     console.log("props:", props);
+    console.log("props.name:", props.name);
     super(props);
   }
 
@@ -14,8 +15,8 @@ export default class Home extends Component {
       <div>
 <div className="cont">
 <h1>name:{this.props.name}</h1>
-        <h1>age:{this.props.age}</h1>
-        <h1>Addres:{this.props.address}</h1>
+        {/* <h1>age:{this.props.age}</h1> */}
+        {/* <h1>Addres:{this.props.address}</h1> */}
 </div>
         <h1>Welcome to Home</h1>
         
