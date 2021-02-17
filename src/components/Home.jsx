@@ -23,7 +23,8 @@ export default class Home extends Component {
      
         <button
           onClick={() => {
-            this.props.changedata({name:"arslan",age:25,address:"lahore"});
+            this.props.changedata("arslan")
+            // this.props.changedata({name:"arslan",age:25,address:"lahore"});
           }}
         >
           Change Data

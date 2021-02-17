@@ -2,7 +2,7 @@ import {CHANGE_DATA ,INCREMENT,DECREMENT,RESET } from "../constants"
 export const changedata=(data)=>{
     return {
         type:CHANGE_DATA,
-        data:data
+        payload:data
     }
 }
 

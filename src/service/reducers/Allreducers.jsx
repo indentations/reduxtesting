@@ -2,6 +2,7 @@
 import { CHANGE_DATA, INCREMENT,DECREMENT, RESET } from "../constants";
 
 const initialState = {
+    name:"ali",
     data:{
         name:"ali",
         age:20,
@@ -13,11 +14,12 @@ const initialState = {
 };
 
 export default function AllReducers(state = initialState, action) {
+    console.log("action.payload:",action.payload)
     switch (action.type) {
         case CHANGE_DATA:
             return {
                 ...state,
-                data: action.data
+                name: action.payload
             }
 
         case INCREMENT:
