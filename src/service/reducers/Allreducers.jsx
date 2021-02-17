@@ -3,6 +3,11 @@ import { CHANGE_NAME } from "../constants";
 
 const initialState = {
   name: "ali",
+  user:{
+      name:"users",
+      age:30,
+      address:"lhr"
+  }
   // age:22,
   // address:"ali lives in lahore",
 };
@@ -13,7 +18,7 @@ export default function AllReducers(state = initialState, action) {
             // console.warn("reducer",action)
             return {
                 ...state,
-                name: action.payload
+                user: action.payload
             }
         default:
             return state
