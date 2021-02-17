@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import Homeconnect from "./middleware/Homeconnect";
+import { connect } from "react-redux";
 
-function App() {
+// import Counter from './container/appContainer';
+function App(props) {
+  console.log("props:", props);
+  console.log("props.name:", props.myname);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Homeconnect />
     </div>
   );
 }
