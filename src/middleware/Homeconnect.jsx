@@ -11,7 +11,7 @@ const mapStateToProps = (state)=>{
 }
 const mapDispatchToProps =(dispatch)=>{
     return{
-        handleChangeName:(name=>{dispatch({type:"CHANGE_NAME",payload:"ijaz"})})
+        handleChangeName:(name=>{dispatch(changeName(name))})
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
