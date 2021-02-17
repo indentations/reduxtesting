@@ -1,7 +1,12 @@
 // import { ADD_TO_CART } from '../constants'
-import { CHANGE_NAME } from "../constants";
+import { CHANGE_DATA, INCREMENT,DECREMENT, RESET } from "../constants";
 
 const initialState = {
+    data:{
+        name:"ali",
+        age:20,
+        address:"islamabad"
+    },
   counter: 0,
   // age:22,
   // address:"ali lives in lahore",
@@ -9,12 +14,29 @@ const initialState = {
 
 export default function AllReducers(state = initialState, action) {
     switch (action.type) {
-        case CHANGE_NAME:
-            // console.warn("reducer",action)
+        case CHANGE_DATA:
             return {
                 ...state,
-                name: action.payload
+                data: action.data
             }
+
+        case INCREMENT:
+            return {
+                ...state,
+                counter: state.counter+1
+            }
+            case DECREMENT:
+                
+                return {
+                    ...state,
+                    counter: state.counter-1
+                }
+                case RESET:
+               
+                    return {
+
+                        counter: 0
+                    }
         default:
             return state
     }

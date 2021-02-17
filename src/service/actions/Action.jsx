@@ -1,12 +1,28 @@
-import { INCREMENT,DECREMENT,RESET } from "../constants"
-const increnet=()=>{
-    type:INCREMENT
+import {CHANGE_DATA ,INCREMENT,DECREMENT,RESET } from "../constants"
+export const changedata=(data)=>{
+    return {
+        type:CHANGE_DATA,
+        data:data
+    }
 }
 
-const decrenet=()=>{
-    type:DECREMENT
+
+export const increment=()=>{
+    return {
+        type:INCREMENT
+    }
 }
 
-const reset=()=>{
-    type:reset
+export const decrement=()=>{
+    return {
+        type:DECREMENT
+    }
+ 
+}
+
+export const reset=()=>{
+    return {
+        type:RESET
+    }
+    
 }

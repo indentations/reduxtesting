@@ -8,30 +8,43 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log("props.name:", this.props.name);
+    // console.log("props.name:", this.props.name);
     // const {name,handle}=this.props
     return (
       <div>
+<div className="cont">
+<h1>name:{this.props.name}</h1>
+        <h1>age:{this.props.age}</h1>
+        <h1>Addres:{this.props.address}</h1>
+</div>
         <h1>Welcome to Home</h1>
-        <h1>name:{this.props.name}</h1>
-        {/* <h1>Addres:{this.props.myaddress}</h1> */}
+        
+        <h1>name:{this.props.counter}</h1>
+     
         <button
           onClick={() => {
-            this.props.increment("wali is here");
+            this.props.changedata({name:"arslan",age:25,address:"lahore"});
+          }}
+        >
+          Change Data
+        </button>
+        <button
+          onClick={() => {
+            this.props.increment();
           }}
         >
           Increment
         </button>
         <button
           onClick={() => {
-            this.props.decrement("wali is here");
+            this.props.decrement();
           }}
         >
           Decrement
         </button>
         <button
           onClick={() => {
-            this.props.reset("wali is here");
+            this.props.reset();
           }}
         >
           Reset
