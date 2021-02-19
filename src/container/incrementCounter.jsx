@@ -7,14 +7,14 @@ const mapStateToProps = (state) => {
     counter: state.counter,
   };
 };
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch => {
   return {
-    increment: () => {dispatch(increment());
+    increment: () => {dispatch(increment())
     },
-    decrement: () => {dispatch(decrement());
+    decrement: () => {dispatch(decrement())
     },
-    reset: () => {dispatch(reset());
-    },
-  };
-};
+    reset: () => {dispatch(reset())
+    }
+  }
+})
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -9,8 +9,8 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    changedata: (data) => {dispatch(changedata(data));
-    },
-  };
+    changedata: (data => {dispatch(changedata(data));
+    })
+  }
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Biodata);
