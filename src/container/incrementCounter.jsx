@@ -9,14 +9,11 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    increment: () => {
-        return dispatch(increment());
+    increment: () => {dispatch(increment());
     },
-    decrement: () => {
-        return dispatch(decrement());
+    decrement: () => {dispatch(decrement());
     },
-    reset: () => {
-        return dispatch(reset());
+    reset: () => {dispatch(reset());
     },
   };
 };

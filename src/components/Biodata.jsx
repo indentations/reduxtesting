@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class Home extends Component {
   constructor(props) {
     console.log("props:", props);
-    console.log("props.data.name:", props.data.name);
+    // console.log("props.data.name:", props.data.name);
     super(props);
   }
 
@@ -13,7 +13,7 @@ export default class Home extends Component {
     return (
       <div>
         <div className="cont">
-          {/* <h1>name:{this.props.data.name}</h1> */}
+          <h1>name:{this.props.data.name}</h1>
           {/* <h1>age:{this.props.data.age}</h1> */}
           {/* <h1>Addres:{this.props.data.address}</h1> */}
           <button

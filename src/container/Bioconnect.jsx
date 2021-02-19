@@ -9,8 +9,7 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    changedata: (data) => {
-     return dispatch(changedata(data));
+    changedata: (data) => {dispatch(changedata(data));
     },
   };
 };
