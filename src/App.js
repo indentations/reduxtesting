@@ -1,14 +1,15 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Homeconnect from "./middleware/Homeconnect";
-import { connect } from "react-redux";
+import CounterConnect from "./middleware/CounterConnect";
 
-// import Counter from './container/appContainer';
 function App(props) {
   console.log("props:", props);
   console.log("props.name:", props.myname);
   return (
     <div>
+      
+      <CounterConnect />
       <Homeconnect />
     </div>
   );

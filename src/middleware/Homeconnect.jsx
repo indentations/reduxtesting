@@ -4,7 +4,7 @@ import {changeName} from "../service/actions/Action"
 const mapStateToProps = (state)=>{
     console.log("state",state)
     return {
-        user:state.user,
+        user:state.dr.user,
         // myage:state.age,
         // myaddress:state.address
     }

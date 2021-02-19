@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 
-import RootReducer from "./service/reducers/Allreducers";
+import CountertReducer from "./service/reducers/counterReducer";
+import DataReducer from "./service/reducers/Allreducers";
+const RootReducer = combineReducers({ cr:CountertReducer, dr :DataReducer });
+
 const store = createStore(
   RootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

@@ -1,6 +1,8 @@
 import { combineReducers} from "redux";
-import AllReducers from "./Allreducers.jsx";
+import AllReducer from "./Allreducers.jsx";
+import CounterReducer from "./counterReducer";
 export default combineReducers({
-  AllReducers:AllReducers,
+  a:AllReducer,
+  b:CounterReducer
 });
 // export default RootReducer

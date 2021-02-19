@@ -8,11 +8,9 @@ const initialState = {
       age:30,
       address:"lhr"
   }
-  // age:22,
-  // address:"ali lives in lahore",
 };
 
-export default function AllReducers(state = initialState, action) {
+export default function(state = initialState, action) {
     switch (action.type) {
         case CHANGE_NAME:
             // console.warn("reducer",action)
@@ -26,27 +24,3 @@ export default function AllReducers(state = initialState, action) {
 
 
 }
-
-
-
-
-// const AllReducers = (state = initialState, action) => {
-//   console.log("state in reducer:", state);
-//   console.log("action in reducer:", action);
-
-//   // return {
-//   //                 ...state,
-//   //                 name:action.payload
-//   //             }
-//   switch (action.type) {
-//     case CHANGE_NAME:
-//       return {
-//         ...state,
-//         name: action.payload,
-//       };
-//     // break;
-//     default:
-//       return state;
-//   }
-// };
-// export default AllReducers;
