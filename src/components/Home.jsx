@@ -8,7 +8,7 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log("props.name:", this.props.name);
+    console.log("props.user.name:", this.props.user.name);
     // const {name,handle}=this.props
     return (
       <div>
