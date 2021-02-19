@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import IncrementCounter from "./container/incrementCounter"
+import logo from "./logo.svg";
+import "./App.css";
+// import Test from './Testings';
+import IncrementCounter from "./container/incrementCounter";
+import Fake from "./container/Fake";
+import Biodata from "./container/Bioconnect";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-    
-     <IncrementCounter/>
+        <IncrementCounter />
+        <Biodata />
+        {/* <Fake /> */}
       </header>
     </div>
   );
