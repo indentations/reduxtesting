@@ -4,7 +4,7 @@ import Home from "../components/Home";
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.counter,
+    counter:state.cr.counter,
   };
 };
 const mapDispatchToProps = (dispatch => {

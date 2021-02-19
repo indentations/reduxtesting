@@ -9,13 +9,12 @@ export default class Home extends Component {
   }
 
   render() {
-
     return (
       <div>
         <div className="cont">
           <h1>name:{this.props.data.name}</h1>
-          {/* <h1>age:{this.props.data.age}</h1> */}
-          {/* <h1>Addres:{this.props.data.address}</h1> */}
+          <h1>age:{this.props.data.age}</h1>
+          <h1>Addres:{this.props.data.address}</h1>
           <button
             onClick={() => {
               // this.props.changedata("arslan")
@@ -29,7 +28,6 @@ export default class Home extends Component {
             Change Data
           </button>
         </div>
-       
       </div>
     );
   }

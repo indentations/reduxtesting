@@ -4,7 +4,7 @@ import Biodata from "../components/Biodata";
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data,
+    data: state.dr.data,
   };
 };
 const mapDispatchToProps = (dispatch) => {

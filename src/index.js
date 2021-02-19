@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createStore} from "redux"
-// import RootReducer from "./service/reducers/Allreducers.jsx";
 import RootReducer from "./service/reducers/index";
 import {Provider} from "react-redux";
 const store=createStore(RootReducer,   window.__REDUX_DEVTOOLS_EXTENSION__ && 
