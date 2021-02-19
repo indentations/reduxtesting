@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class Home extends Component {
   constructor(props) {
     console.log("props:", props);
-    console.log("props.name:", props.name);
+    console.log("props.data.name:", props.data.name);
     super(props);
   }
 

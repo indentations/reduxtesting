@@ -16,11 +16,10 @@ export default function Changedata(state = initialState, action) {
     console.log("state in ChangedataReducer:", state);
     switch (action.type) {
         case CHANGE_DATA:
-            return {data: action.payload}
-            // return {
-            //     ...state,
-            //     data: action.payload
-            // };
+            return {
+                ...state,
+                data: action.payload
+            };
             break;
         default:
             return state
