@@ -12,8 +12,8 @@ const initialState = {
 
 export default function Changedata(state = initialState, action) {
 
-    console.log("action.payload: ChangedataReducer", action);
-    console.log("state in ChangedataReducer:", state);
+    // console.log("action.payload: ChangedataReducer", action);
+    // console.log("state in ChangedataReducer:", state);
     switch (action.type) {
         case CHANGE_DATA:
             return {

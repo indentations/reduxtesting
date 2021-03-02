@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 // import {CHANGE_NAME} from '../service/constants';
-let m = 30;
-const n = 40;
+
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-  m = 44;
-  n = 77;
+
+  
   render() {
-    console.log("m,n: props.counter in home", m, n, this.props);
+    // console.log("m,n: props.counter in home", m, n, this.props);
     // const {name,handle}=this.props
     return (
       <div>

@@ -6,8 +6,8 @@ const initialState = {
 };
 
 export default function AllReducers(state = initialState, action) {
-  console.log("action.payload: counterREducer", action);
-  console.log("state in counterReducer:", state);
+  // console.log("action.payload: counterREducer", action);
+  // console.log("state in counterReducer:", state);
   switch (action.type) {
     case INCREMENT:
       return {

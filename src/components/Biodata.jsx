@@ -2,11 +2,11 @@ import React, { Component } from "react";
 // import {CHANGE_NAME} from '../service/constants';
 
 export default class Home extends Component {
-  constructor(props) {
-    console.log("props:", props);
-    // console.log("props.data.name:", props.data.name);
-    super(props);
-  }
+  // constructor(props) {
+  //   // console.log("props:", props);
+  //   // console.log("props.data.name:", props.data.name);
+  //   super(props);
+  // }
 
   render() {
     return (
